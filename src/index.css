@@ -1,3 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .hover-effect {
+    pointer-events: none; /* Ensure the overlay doesn't block hover events */
+    transition: opacity 0.3s ease-out;
+  }
+
+  .group:hover .hover-effect {
+    opacity: 0.5; /* Adjust the opacity as desired */
+  }
+
+  .group:hover .hover-effect + .relative > .rounded-lg:first-child {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -54,15 +74,59 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+.parallax{
+  display: grid;
+  position: relative;
+  grid-template-areas: "stack";
+  min-height: 75vh;
+  min-width: 1400px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.parallax > img {
+  width: 100%;
+}
+
+.parallax > * {
+  grid-area:stack;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+.parallax-content{
+  --parallax-speed: 210;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-wave {
+  z-index:5;
+}
+.hero-astoboy {
+  z-index:4;
+  --parallax-speed: 100;
+}
+.hero-moon {
+  z-index:3;
+  --parallax-speed: 150;
+}
+.hero-space {
+  z-index:2;
+  --parallax-speed: 200;
+}
+@media(min-width: 1024px){
+  .parallax__content {
+    flex-direction: row;
+    text-align: left;
   }
 }
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 1vh));
+  }
+}
+
