@@ -118,6 +118,12 @@ button:focus-visible {
   z-index:2;
   --parallax-speed: 200;
 }
+.whale{
+  z-index:1;
+}
+.whaleCanvas{
+  z-index:1;
+}
 @media(min-width: 1024px){
   .parallax__content {
     flex-direction: row;
