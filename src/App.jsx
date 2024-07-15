@@ -6,10 +6,7 @@ function App() {
   const wrapperRef = useRef(window.screenTop);
   return (
     <BrowserRouter>
-    <h1 className="text-3xl font-bold underline text-amber-500">
-      Hello world!
-    </h1>
-    <div className='relative z-0 bg-primary'>
+    <div className='main-container'>
       <Nav/>
       <Hero scrollContainer={wrapperRef}/>
       <Experience/>
