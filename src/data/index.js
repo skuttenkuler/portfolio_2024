@@ -8,26 +8,30 @@ export const experience = [
     {
         title: 'Stagepilot',
         position: 'Software Engineer',
-        deployed: '//stagepilot.com.com',
+        link: '//stagepilot.com',
         thumbnail: '/static/tobit.png',
-        description: 'Tobi Tobin Marketplace.',
         daterange:'04/2023 - current'
+    },
+    {
+        title: 'Kidd Digital',
+        position: 'Freelance Software Engineer & Designer',
+        link: '/',
+        thumbnail: '/static/tobit.png',
+        daterange: 'Jun 2017 - current'
     },
     {
         title: 'Gap Inc.',
         position: 'Web Content Developer',
-        deployed: '//gap.com',
+        link: '//gap.com',
         thumbnail: '/static/tobit.png',
-        description: 'Tobi Tobin Marketplace.',
         daterange: 'Feb 2022 - Sept 2022'
     },
     {
         title: 'Tobi Tobin',
         position: 'Full Stack Developer',
-        deployed: '//tobitobin.com',
+        link: '//tobitobin.com',
         thumbnail: '/static/tobit.png',
-        description: 'Tobi Tobin Marketplace.',
-        daterange: 'Jun 2022 - Sept 2020'
+        daterange: 'Jun 2020 - Sept 2020'
     },
 ]
 

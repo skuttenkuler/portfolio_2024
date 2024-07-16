@@ -25,8 +25,6 @@ const Contact = (props) => {
                         </a>
                     </ul>
                 </div>
-        
-        
                 <ContactForm/>
             </div>
         </div>

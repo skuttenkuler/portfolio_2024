@@ -15,12 +15,12 @@ const Hero = () => {
     return (
         <section className="hero parallax">
             <div className="hero-text-container">
-             <h1>Sam Kuttenkuler</h1>
-             <p>Software Engineer</p>
+             <h2 id="hero-name">SAM KUTTENKULER</h2>
+             <p id="hero-name-sub">Software Engineer</p>
             </div>
            <img className="hero-wave" src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-wave.png" alt="bg-wave"/>
            <img className="hero-astoboy" src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-spaceboy.png" alt="bg-space-dude"/>
-           <img className="hero-whale" style={{rotate:`${scrollPosition/20}deg`,left:`${scrollPosition/5}px`}} src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-whale.png" alt="bg-whale"/>
+           <img className="hero-whale" style={{rotate:`${scrollPosition/20}deg`,left:`${scrollPosition/5}px`,bottom:`-${scrollPosition/3}px`}} src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-whale.png" alt="bg-whale"/>
            <img className="hero-moon" src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-moon.png" alt="bg-moon"/>
            <img className="hero-space" src="https://sk-portfolio-pics.s3.amazonaws.com/port-hero-space.png" alt="bg-space"/>
         </section>
