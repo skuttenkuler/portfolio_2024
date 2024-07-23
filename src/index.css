@@ -64,42 +64,36 @@
   animation: parallax linear;
   animation-timeline: scroll();
 }
-.parallax-content{
-  --parallax-speed: 210;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
 .hero-wave {
   z-index:500;
-
+  --parallax-speed: 10;
 }
 .hero-astoboy {
   z-index:5;
-  --parallax-speed: 100;
+  --parallax-speed: 2000;
 }
 .hero-whale {
-  position: fixed;
+  position: absolute;
   bottom: -100px;
   z-index: 4;
+  --parallax-speed: 1500;
 }
 .hero-moon  {
   z-index:3;
-  --parallax-speed: 100;
+  --parallax-speed: 2250;
 }
 .hero-space {
   position: fixed;
   top:1px;
   z-index:2;
-  --parallax-speed: 100;
+  --parallax-speed: 2500;
 }
 
 .hero-text-container{
-  position: fixed;
-  --parallax-speed: 150;
+  display: block;
+  position: absolute;
+  --parallax-speed:3000;
   top: 100px;
   left: 25%;
   z-index: 4;

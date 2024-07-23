@@ -5,14 +5,14 @@ import { Contact, Experience, Hero, Nav, Portfolio, Projects, Skills } from './c
 function App() {
   return (
     <BrowserRouter>
-    <div className='main-container'>
-      <Nav/>
-      <Hero/>
-      <Experience/>
-      <Skills/>
-      <Portfolio/>
-      <Projects/>
-      <Contact/>
+      <div className='main-container'>
+        <Nav/>
+        <Hero/>
+        <Experience/>
+        <Skills/>
+        <Portfolio/>
+        <Projects/>
+        <Contact/>
       </div>
     </BrowserRouter>
   )
