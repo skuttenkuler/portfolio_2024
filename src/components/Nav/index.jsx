@@ -34,7 +34,7 @@ const Nav = () => {
         <div className="nav">
             <ul className="navList">
                 {links.map(link => (
-                    <li href={`#${link.id}`} className="navLink">{link.title}</li>
+                    <li key={link.id} href={`#${link.id}`} className="navLink">{link.title}</li>
                 ))}
             </ul>
         </div>
