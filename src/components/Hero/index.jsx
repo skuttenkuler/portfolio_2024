@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from "react"
+
 const Hero = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const handleScroll = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
         };
     }, []);
     return (
-        <section className="hero parallax">
+        <section className="hero parallax" id="hero">
             <div className="hero-text-container">
              <h2 id="hero-name">SAM KUTTENKULER</h2>
              <p id="hero-name-sub">Software Engineer</p>

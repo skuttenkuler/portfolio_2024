@@ -5,27 +5,28 @@ const Nav = () => {
     const links = [
         {
             id:"hero",
-            title:"Main"
+            title:"Main",
+            target: "#hero"
         },
         {
             id:"experience",
-            title:"Experience"
+            title:"Experience",
+            target: "#experience"
         },
         {
             id:"skills",
-            title:"Skills"
-        },
-        {
-            id:"portfolio",
-            title:"Portfolio"
+            title:"Skills",
+            target: "#skills"
         },
         {
             id:"projects",
-            title:"Projects"
+            title:"Projects",
+            target: "#projects"
         },
         {
             id:"contact",
-            title:"Contact"
+            title:"Contact",
+            target: "#contact"
         }
         
     ]
@@ -34,7 +35,7 @@ const Nav = () => {
         <div className="nav">
             <ul className="navList">
                 {links.map(link => (
-                    <li key={link.id} href={`#${link.id}`} className="navLink">{link.title}</li>
+                    <a key={link.id} href={link.target} className="navLink">{link.title}</a>
                 ))}
             </ul>
         </div>

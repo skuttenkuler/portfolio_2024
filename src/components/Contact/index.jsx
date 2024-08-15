@@ -2,7 +2,7 @@ import React from "react"
 import {ContactForm} from './Form'
 const Contact = (props) => {
     return (
-        <div>
+        <section id="contact">
             <h1>Let's build something great.</h1>
             <div>
                 <div>
@@ -27,7 +27,7 @@ const Contact = (props) => {
                 </div>
                 <ContactForm/>
             </div>
-        </div>
+        </section>
     )
 };
 

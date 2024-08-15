@@ -28,9 +28,9 @@ export const experience = [
     },
     {
         title: 'Kidd Digital',
-        position: 'Freelance Engine',
+        position: 'Freelance Engineer',
         link: '/',
-        image: 'images/gap.png',
+        image: 'images/KDlogo.png',
         daterange: 'Jun 2017 - current'
     },
 ]
@@ -40,28 +40,23 @@ export const projects = [
         title: 'Kidd Engine',
         deployed: '//github.com/skuttenkuler/Game-Engine',
         code: '//github.com/skuttenkuler/Game-Engine',
-        thumbnail: '/static/payrollandpicks.png',
         description: 'Personal C++ game engine.'
     },
     {
         title: 'Logistic Lunatic',
         deployed: '//github.com/skuttenkuler/Game-Engine',
         code: '//github.com/skuttenkuler/Game-Engine',
-        thumbnail: '/static/payrollandpicks.png',
         description: 'Chance based operations management game.'
     },
     {
         title: 'C++ Audio Synthesizer',
         code: '//github.com/skuttenkuler/AudioSynthesizer/tree/master',
-        thumbnail: '/static/musicstore.png',
         description: 'Music Store Management System'
     },
     {
-        id: 4,
         title: 'Hacker Terminal',
         deployed: '//sharemygame.com/@samkuttenk/hackergame/',
         code: '//github.com/skuttenkuler/HackerTerminalGame',
-        thumbnail: '/static/hackerterminal.png',
         description: 'Simple password hacker game in Unity.'
     }
 ]

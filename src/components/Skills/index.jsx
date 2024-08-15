@@ -5,7 +5,7 @@ const Grid = () => {
     return(
         <ul className="skill-grid">
             {skills.map((skill,i) => 
-                <li className="skill-grid-cell">
+                <li className="skill-grid-cell" key={i}>
                     <img className="skill-grid-image" src={`/icons/${skill}.svg`}/>
                     <div className="skill-grid-text">{skill}</div>
                 </li>
@@ -15,10 +15,9 @@ const Grid = () => {
 }
 const Skills = () => {
     return (
-        <div className="container">
-            <h3>Skills</h3>
+        <section className="container" id="skills">
             <Grid/>
-        </div>
+        </section>
     )
 };
 

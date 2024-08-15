@@ -1,3 +1,6 @@
+html,section{
+  background-color: rgba(3, 17, 34)
+}
 @font-face {
   font-family: DMSerif;
   src: url(/fonts/DMSerifText-Regular.ttf);
@@ -10,6 +13,7 @@
   font-family: syne-sb;
   src: url(/fonts/Syne-SemiBold.ttf);
 }
+
 
 #root{
   width: 100vw;
@@ -55,7 +59,7 @@
 .hero-wave {
   z-index:500;
   width: 100%;
-  --parallax-speed: 200;
+  --parallax-speed: 5;
   -webkit-mask-image: linear-gradient(180deg, rgba(1, 15, 35,1), rgba(1, 15, 35,.9));
   mask-image: linear-gradient(180deg, rgba(1, 15, 35,1),rgba(1, 15, 35,.9));
 }
@@ -71,19 +75,19 @@
 }
 .hero-moon  {
   z-index:3;
-  --parallax-speed: 100;
+  --parallax-speed: 200;
 }
 .hero-space {
   position: fixed;
   top:1px;
   z-index:2;
-  --parallax-speed: 125;
+  --parallax-speed: 200;
 }
 
 .hero-text-container{
   display: block;
   position: absolute;
-  --parallax-speed:300;
+  --parallax-speed:400;
   top: 100px;
   left: 25%;
   z-index: 4;
@@ -145,7 +149,7 @@
       }
 
       &:hover {
-        flex-grow: 10;
+        flex-grow: 2;
         img {
           filter: grayscale(0);
         }
@@ -173,6 +177,9 @@
 }
 }
 
+#skills{
+  padding-bottom:200px;
+}
 
 .skill-grid{
   display: -webkit-box;
@@ -198,7 +205,7 @@
   padding: 0;
   text-align: center;
   z-index: 1;
-  box-shadow: 0px 0px 15px 0 rgba(65, 132, 150,1);
+  box-shadow:  6px 0px 14px 4px rgb(178, 92, 74);
 }
 .skill-grid-image{
   object-fit: cover;
@@ -242,7 +249,7 @@
   z-index: -1;
 }
 .skill-grid-cell::before{
-  background: #fff;
+  background: #bbd5d3;
   transform: scale(1.055);
 }
 .skill-grid-cell::after{
@@ -260,11 +267,25 @@
   filter: grayscale(0%);
 }
 .skill-grid-cell:hover::before{
-  background:rgb(214, 214, 201)
+  background:#4da3b5;
 }
 .skill-grid-cell:hover::after
 {
   opacity: 0;
+}
+
+.slide{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    &__container{
+      width: 75%;
+      background-color: rgb(148, 16, 16) !important;
+      padding: 25px;
+      border-radius: 5px;
+      height: auto;
+    }
 }
 @media (max-width: 550px) {
   .skill-grid-cell 
