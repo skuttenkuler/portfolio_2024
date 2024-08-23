@@ -1,7 +1,7 @@
 export const skills = ["React","TypeScript","JavaScript","Go","Django", 
 "Python", "Node.js", "Vite.js", "Next.js", "AWS", 
 "Docker", "HTML", "CSS", "Sass", "Tailwind",
-"SQL", "PostgresSQL", "Swift", "Flutter", "Jest", 
+"SQL", "PSQL", "Swift", "Flutter", "Jest", 
 "Cucumber", "C++","OpenGL","Unreal Engine","Linux"]
 
 export const experience = [
