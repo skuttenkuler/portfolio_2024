@@ -31,9 +31,10 @@ export const ContactForm = () => {
             contentType: "application/json; charset=utf-8",
             data: data,
         })
-        .then(function(response) {
-            console.log(response.statusText, response.status,response.data);
+        .then(function() {
+            console.log("hey")
             setSuccess(true)
+            setInputs({name: '', email: '', message: ''})
           })
           .catch(function(error) {
             console.log(error);
@@ -46,9 +47,11 @@ export const ContactForm = () => {
                 <form onSubmit={handleSubmit} name="contact" href="/success" method="POST">
                 <div>
                     <input  type="text" id="name" name="name" value={input.name} placeholder="Name.." onChange={handleChange} required/>
+                    <span/>
                 </div>
                 <div>
                     <input  type="text" id="email" name="email" value={input.email} placeholder="Email.." onChange={handleChange} required/>
+                    <span/>
                 </div>
                 <div>
                     <textarea  id="message" name="message" value={input.message} placeholder="What do you want to build?" onChange={handleChange} required></textarea>
@@ -58,7 +61,11 @@ export const ContactForm = () => {
                 </div>
             </form>
             :
-            <h1>success</h1>
+            <div className='success-message'>
+                <button onClick={setSuccess(false)}>x</button>
+                <h4>Thank you!</h4>
+                <p>Your message was sent.</p>
+            </div>
             }
             </>
         )

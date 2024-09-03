@@ -1,27 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+import React, { useState } from "react";
 const Nav = () => {
     const links = [
         {
             id:"hero",
-            title:"Main",
+            title:"Home",
             target: "#hero"
         },
         {
-            id:"experience",
-            title:"Experience",
-            target: "#experience"
+            id:"career",
+            title:"Career",
+            target: "#career"
         },
         {
             id:"skills",
             title:"Skills",
             target: "#skills"
-        },
-        {
-            id:"projects",
-            title:"Projects",
-            target: "#projects"
         },
         {
             id:"contact",
@@ -30,14 +23,31 @@ const Nav = () => {
         }
         
     ]
+    const [active,setActive] = useState(0)
+    const [toggleMenu, setToggleMenu] = useState(false)
+    const handleSetActive = (index) => {
+        setActive(index !== active ? index : active);
+        if(toggleMenu){
+            setToggleMenu(index !== active ? false : true)
+        }
+        
+    }
 
     return (
-        <div className="nav">
-            <ul className="navList">
-                {links.map(link => (
-                    <a key={link.id} href={link.target} className="navLink">{link.title}</a>
+        <div id="nav" className="nav">
+            <ul className={`navList ${toggleMenu ? 'open':''}`}>
+                {links.map((link,i) => (
+                <div key={i}>
+                    <a href={link.target} className={i === active ? 'navlink active': 'navLink'} onClick={() => handleSetActive(i)}>{link.title}</a>
+                    <span className={`underline ${i === active ? 'expand' : ''}`}></span>
+                </div>
                 ))}
             </ul>
+            <div className={`mobile-nav ${toggleMenu && 'hide'}`} onClick={() => setToggleMenu(true)}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
         </div>
     
     );

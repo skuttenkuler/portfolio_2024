@@ -10,6 +10,7 @@ const chunkArray = (arr,size) => {
 const Grid = () => {
     const rows = chunkArray(skills,5)
     return(
+        <div className="skills-container">  
         <ul className="skill-grid">
             {rows.map((row, i) => (
                 <ul key={i} className={i%2 ? 'row-even' : 'row-odd'}>
@@ -23,11 +24,13 @@ const Grid = () => {
             ))}
            
         </ul>
+        </div>
     )
 }
 const Skills = () => {
     return (
         <section className="container" id="skills">
+            <p className="section-title">TECHNOLOGIES</p>
             <Grid/>
         </section>
     )

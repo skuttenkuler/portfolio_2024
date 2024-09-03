@@ -4,34 +4,34 @@ export const skills = ["React","TypeScript","JavaScript","Go","Django",
 "SQL", "PSQL", "Swift", "Flutter", "Jest", 
 "Cucumber", "C++","OpenGL","Unreal Engine","Linux"]
 
-export const experience = [
+export const career = [
     {
-        title: 'Stagepilot',
-        position: 'Software Engineer',
-        link: '//stagepilot.com',
-        image: 'images/stagepilot.png',
-        daterange:'04/2023 - current'
+        title: 'Tobi Tobin',
+        position: 'Full Stack Developer',
+        link: '//tobitobin.com',
+        image: 'https://sk-portfolio-pics.s3.amazonaws.com/tobitobin.png?v=1',
+        daterange: 'Jun 2020 - Sept 2020'
     },
     {
         title: 'Gap Inc.',
         position: 'Web Content Developer',
         link: '//gap.com',
-        image: 'images/gap.png',
+        image: 'https://sk-portfolio-pics.s3.amazonaws.com/gap.png?v=1',
         daterange: 'Feb 2022 - Sept 2022'
-    },
-    {
-        title: 'Tobi Tobin',
-        position: 'Full Stack Developer',
-        link: '//tobitobin.com',
-        image: 'images/tobitobin.png',
-        daterange: 'Jun 2020 - Sept 2020'
     },
     {
         title: 'Kidd Digital',
         position: 'Freelance Engineer',
         link: '/',
-        image: 'images/KDlogo.png',
+        image: 'https://sk-portfolio-pics.s3.amazonaws.com/KDlogo.png?v=1',
         daterange: 'Jun 2017 - current'
+    },
+    {
+        title: 'Stagepilot',
+        position: 'Software Engineer',
+        link: '//stagepilot.com',
+        image: 'https://sk-portfolio-pics.s3.amazonaws.com/stagepilot.png?v=1',
+        daterange:'04/2023 - current'
     },
 ]
 
